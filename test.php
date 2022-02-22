@@ -1,14 +1,15 @@
 <?php
-/*
+require_once __DIR__ . '/vendor/autoload.php';
+
 use Symfony\Component\Yaml\Yaml;
 
 $value = Yaml::parse("Hello world !");
 
 echo $value;
-*/
-require 'vendor/autoload.php';
 
+/*
 use Cocur\Slugify\Slugify;
 
 $slugify = new Slugify();
-echo $slugify->slugify('Hello World! l école est cool'); // hello-world
+echo $slugify->slugify('Hello World!'); // hello-world
+*/
