@@ -6,4 +6,4 @@ use Symfony\Component\Yaml\Yaml;
 
 $value = Yaml::parseFile(__DIR__ . '/demo.yaml');
 
-echo($value);
+var_dump($value);
