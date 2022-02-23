@@ -4,6 +4,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Symfony\Component\Yaml\Yaml;
 
-$value = Yaml::parse("1e+3");
+$value = Yaml::parseFile(__DIR__ . '/demo.yaml');
 
-var_dump($value);
+echo($value);
