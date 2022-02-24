@@ -9,7 +9,7 @@ use Symfony\Component\Yaml\Exception\ParseException;
 
 try {
     $value = Yaml::parseFile(__DIR__ . '/demo.yaml');
-    var_dump($value);
+    dump($value);
 } catch (ParseException $exception) {
     printf('Unable to parse the YAML string: %s', $exception->getMessage());
 }
