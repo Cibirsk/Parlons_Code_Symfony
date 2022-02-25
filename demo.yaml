@@ -1,3 +1,14 @@
 name: Bob
 age: 12
-adress: {city: SF, country: USA, code: 123}
+adress: 
+  city: SF
+  country: USA
+  code: 123
+friends:
+  - Mike:
+      age: 23
+      tel: "1234567"
+  - Al:
+      age: 34
+      tel: "123412"
+  - Dolores
