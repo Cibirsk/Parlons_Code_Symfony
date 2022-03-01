@@ -1,4 +1,4 @@
-# debut config d'orgine
+# debut config d'origine
 # controllers:
 #     resource: ../src/Controller/
 #     type: annotation
@@ -9,7 +9,7 @@
 # fin config d'origine
 
 
-#debut modif
+#debut config
 home:
     path: /
     controller: App\Controller\HomeController::index
