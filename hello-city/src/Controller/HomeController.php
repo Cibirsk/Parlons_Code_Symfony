@@ -2,13 +2,20 @@
 
 namespace App\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class HomeController
 {
-    public function index()
+    public function index(Request $request)
     {
-        $name = $_GET['name'];
+        // $name = $_GET['name'];
+
+        if(isset($_GET['name'])){
+            $name = $_GET['name'];
+        }else{
+            $name = 'World';
+        }
 
         return new Response(<<<TEXT
         <!DOCTYPE html>
