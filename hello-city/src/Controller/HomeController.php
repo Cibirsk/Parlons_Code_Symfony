@@ -11,6 +11,9 @@ class HomeController
     {
         // $name = $_GET['name'];
 
+        var_dump($request);
+        die;
+
         if(isset($_GET['name'])){
             $name = $_GET['name'];
         }else{
