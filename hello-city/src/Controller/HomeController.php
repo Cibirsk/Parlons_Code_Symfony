@@ -9,12 +9,11 @@ class HomeController
 {
     public function index(Request $request)
     {
-        // $name = $_GET['name'];
 
-        var_dump($request);
-        die;
+        var_dump($request->query->get('name')); //permet de capter la requete envoyée
+        // die;
 
-        if(isset($_GET['name'])){
+        if(isset($_GET['name'])){ //si $name saisi l'afficher sinon 'world'
             $name = $_GET['name'];
         }else{
             $name = 'World';
