@@ -6,9 +6,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class HomeController
 {
-    public function index()
+    public function index(): Response
     {
-
-        return new Response('<h1>Hello from France<h1>');
+        return $this->render('home.html.twig');
     }
 }
